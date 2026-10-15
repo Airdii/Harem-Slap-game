@@ -94,11 +94,11 @@ const rnd=a=>a[Math.floor(Math.random()*a.length)];
 const fx=(el,c,ms)=>{el.classList.remove(c);void el.offsetWidth;el.classList.add(c);return sleep(ms).then(()=>el.classList.remove(c))};
 const AB={narrow:{n:'窄門',d:'判定縮為 ±0.3 秒'},ban_dodge:{n:'禁足',d:'3 回合不能閃避'},ban_slap:{n:'纏繞',d:'3 回合不能呼巴掌'},rage:{n:'鳳威',d:'本回合傷害 +1'},guard:{n:'護身',d:'本回合受傷 -1'},heal:{n:'補湯',d:'回復 2 滴血'}};
 const STAGES=[
- {rank:'宮女',av:'🌸',hp:6,ab:[['narrow',3]],names:['小蓮','春桃','翠兒','阿杏']},
- {rank:'答應',av:'🎋',hp:9,ab:[['narrow',3],['guard',3]],names:['柳答應','白答應','蘭答應','梅答應']},
- {rank:'貴人',av:'🌺',hp:12,ab:[['ban_dodge',5],['rage',5]],names:['安貴人','蘇貴人','容貴人','姜貴人']},
- {rank:'貴妃',av:'🦚',hp:15,ab:[['ban_dodge',5],['guard',5],['heal',5]],names:['華貴妃','淑貴妃','純貴妃']},
- {rank:'皇后',av:'👑',hp:24,ab:[['narrow',7],['ban_slap',7],['rage',7]],names:['鳳儀皇后']}
+ {rank:'宮女',av:'🌸',hp:9,ab:[['narrow',3]],names:['小蓮','春桃','翠兒','阿杏']},
+ {rank:'答應',av:'🎋',hp:15,ab:[['narrow',3],['guard',3]],names:['柳答應','白答應','蘭答應','梅答應']},
+ {rank:'貴人',av:'🌺',hp:20,ab:[['ban_dodge',5],['rage',5]],names:['安貴人','蘇貴人','容貴人','姜貴人']},
+ {rank:'貴妃',av:'🦚',hp:24,ab:[['ban_dodge',5],['guard',5],['heal',5]],names:['華貴妃','淑貴妃','純貴妃']},
+ {rank:'皇后',av:'👑',hp:30,ab:[['narrow',7],['ban_slap',7],['rage',7]],names:['鳳儀皇后']}
 ];
 const S={stage:0,fails:0,PMAX:12,php:12,ban:{dodge:0,slap:0},phase:'',t0:0};
 
